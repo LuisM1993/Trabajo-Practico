@@ -1,0 +1,51 @@
+.bg-carousel-ba1{
+    background-image: url(../img/ba1.jpg);
+}
+.bg-carousel-ba2{
+    background-image: url(../img/ba2.jpg);
+}
+.bg-carousel-ba3{
+    background-image: url(../img/ba3.jpg);
+}
+.carousel-item {
+    background-size: cover;
+    background-position: center center;
+}
+.carousel-item svg { opacity: 0.6; }
+  
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+  
+.carousel-item {
+    height: 37rem;
+    min-height: 95vh;
+}
+
+#lugar{
+    background: gray;
+}
+
+.tarjeta:hover .card-body{
+    background: red;
+}
+
+  /* FOOTER
+-------------------------------------------------- */
+
+#main-footer {
+    background: #1d3c4e;
+    color: #fff;
+    padding: 1.5rem;
+  }
+  
+  #main-footer .nav-link {
+    color: #fff;
+    text-align: center;
+  }
+  #main-footer .nav-link:hover { opacity: .7; }
+  
+  @media (min-width: 992px) {
+    #main-footer .nav-link span { display: block; }
+  }
