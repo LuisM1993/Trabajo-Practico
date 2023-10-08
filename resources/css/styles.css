@@ -1,3 +1,15 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+/* Barra de navegacion
+---------------------------------------------------- */
+li.nav-item{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Carrusel
+--------------------------------------------------- */
 .bg-carousel-ba1{
     background-image: url(../img/ba1.jpg);
 }
@@ -23,12 +35,50 @@
     min-height: 95vh;
 }
 
-#lugar{
-    background: gray;
+/* Tarjeta de los oradores
+------------------------------------------- */
+.tarjeta:hover .card-body{
+    background: rgb(170, 170, 170);
 }
 
-.tarjeta:hover .card-body{
-    background: red;
+
+/*Titulo de los Oradores y Formulario 
+--------------------------------------------------*/
+h2.titulo-gral{
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 200;
+    color: rgb(62, 60, 60);
+}
+.titulo-gral span{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: rgb(20, 19, 19);
+}
+
+
+/* Mi lugar 
+---------------------------------------------------*/
+
+#lugar .bg-aside1{
+    background: rgb(170, 170, 170);
+}
+
+
+div.contenedor-de-img .img-fluid{
+    height: 100%;
+}
+
+
+/*
+Formulario
+---------------------------------------------------*/
+
+button.btn-form{
+    background-color: rgb(125, 191, 26);
+}
+button.btn-form:hover{
+    background-color: rgb(109, 168, 0);
 }
 
   /* FOOTER
@@ -37,7 +87,7 @@
 #main-footer {
     background: #1d3c4e;
     color: #fff;
-    padding: 1.5rem;
+    padding: 0.5rem;
   }
   
   #main-footer .nav-link {
