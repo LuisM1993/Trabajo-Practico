@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(39, 38, 38);
+    height: 89px;
+    font-size: 1.2rem;
+}
+header > div{
+    display: flex;
+    align-items: center;
+
+}
+.logo{
+    text-decoration: none;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+.logo_img{
+    width: 120px;
+}
+
+.menu{
+    display: none;
+    width: 50px;
+    margin-left: 50px;
+}
+.barra_navegacion > ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+ul > li{
+    padding: 10px;
+    list-style: none;
+}
+li > a{
+    text-decoration: none;
+    color: gray;
+}
+.active{
+    color: green;
+    font-weight: bold;
+}
+
+.categorias{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 50px;
+
+}
+.categorias_titulo{
+    font-size: 1.5rem;
+    margin: 0 0 20px;
+}
+.categorias_parrafo{
+    padding: 0 0 15px;
+}
+.container{
+    width: 280px;
+    height: 280px;  
+    margin: 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(138, 138, 138);
+}
+
+.d{
+    grid-column: span 3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.d > span{
+    font-size: 15px;
+}
+.compra{
+    display: flex;
+    justify-content: center;
+}
+form{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 10px;
+}
+input, select{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(143, 143, 143);
+}
+
+/* Aca hay que arreglar: */
+input:focus, select:focus{
+    border: 3px solid #0773bb;
+    outline: none;
+}
+input::placeholder{
+    color: rgb(7, 115, 187);
+}
+select::placeholder{
+    color: rgb(7, 115, 187);
+}
+
+input.campoIncorrecto{
+    border: 3px solid #f00303;
+}  
+
+.correo{grid-column: span 2; width: 100%;}
+.cantidad{display: flex; flex-direction: column;}
+.categoria{display: flex; flex-direction: column;}
+.categoria_opt{width: 100%; height: 100%; border-radius: 5px;}
+.total{
+    grid-column: span 2;
+    background: rgba(160, 222, 241, 0.781);
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.total > p{
+    color: blue;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.ventanaError{
+    background: #ff0000b4;
+}
+p.mensajError{
+    color: black;
+}
+
+.btn{
+    background: rgb(125, 191, 26);
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+.btn:hover{background-color: rgb(109, 168, 0);}
+.footer{
+    background: linear-gradient(to right, rgb(19, 19, 226), rgb(45, 64, 240));
+    height: 12vh;
+    padding: 0.5rem;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer_list > li{
+    gap: 5px;
+}
+
+.laOption{
+    background: rgba(13, 211, 56, 0.63);
+}
+
+@media screen and (max-width: 960px){
+    .categorias{
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .container_c{
+        grid-column: span 2;
+    }
+
+}
+@media screen and (max-width: 800px){
+    .categorias, form{
+        grid-template-columns: 1fr;
+    }
+    .container_c, .d, .correo, .total{
+        grid-column: 1;
+    }
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .menu{
+        display: block;
+        cursor: pointer;
+    }
+    .menu_desplegable{
+        flex-direction: column;
+        position: absolute;
+        height: 80vh;
+        width: 330px;
+        top: 89px;
+        left: -100%;
+        background: rgb(39, 38, 38);
+        transition: all 0.8s;
+    }
+    .barra_navegacion ul li{
+        padding: 0 50px 0 50px;
+    }
+    
+    .mostrar{
+        left: 0;
+    }
+}
