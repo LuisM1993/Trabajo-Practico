@@ -179,7 +179,10 @@ p.mensajError{
     .container_c{
         grid-column: span 2;
     }
-
+    .total{
+        height: auto;
+        padding: 5px;
+    }
 }
 @media screen and (max-width: 800px){
     .categorias, form{
